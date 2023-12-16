@@ -7,7 +7,7 @@ import java.util.List;
 public class CustomerRepository {
     private EntityManager entityManager;
 
-    private EntityManager getEntityManager() {
+    public EntityManager getEntityManager() {
         if (entityManager == null || !entityManager.isOpen()) {
             entityManager = EntityManagerBuilder.getEntityManager();
         }

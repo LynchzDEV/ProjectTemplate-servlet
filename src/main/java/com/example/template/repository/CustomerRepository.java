@@ -2,12 +2,13 @@ package com.example.template.repository;
 
 import com.example.template.model.Customer;
 import jakarta.persistence.EntityManager;
+
 import java.util.List;
 
 public class CustomerRepository {
     private EntityManager entityManager;
 
-    private EntityManager getEntityManager() {
+    public EntityManager getEntityManager() {
         if (entityManager == null || !entityManager.isOpen()) {
             entityManager = EntityManagerBuilder.getEntityManager();
         }
@@ -15,7 +16,7 @@ public class CustomerRepository {
     }
 
     public List<Customer> findAll() {
-        return getEntityManager().createNamedQuery("CUSTOMER.FIND_ALL", Customer.class).getResultList();
+        return getEntityManager().createQuery("select c from Customer c").getResultList();
     }
 
     public Customer find(Integer customerNumber) {

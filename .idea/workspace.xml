@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="template:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1db69372-dae6-44b2-bb98-1a7bb6e04f14" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/template/ArgonInitialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/template/ArgonPasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/612845e7-afd9-49ec-9bee-3817b493c4ae.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/612845e7-afd9-49ec-9bee-3817b493c4ae/storage_v2/_src_/schema/classicmodels.fG2wDg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/612845e7-afd9-49ec-9bee-3817b493c4ae/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/612845e7-afd9-49ec-9bee-3817b493c4ae/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/612845e7-afd9-49ec-9bee-3817b493c4ae/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fcab83b4dc43b7173daf744d8c4f603f3fab4f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8f2e354ee4b99a6f1286f1fe4ace44271cd743d7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/f/3fcab83b4dc43b7173daf744d8c4f603f3fab4f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/f/8f2e354ee4b99a6f1286f1fe4ace44271cd743d7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/template/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/template/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/template/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/template/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/template/repository/OfficeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/template/repository/OfficeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/template/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/template/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +78,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ArgonTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.1.12.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "argon-test",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,15 +105,29 @@
       <recent name="com.example.template.model" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
+  <component name="RunManager" selected="Application.ArgonPasswordTest">
+    <configuration name="ArgonInitialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.template.ArgonInitialize" />
+      <module name="template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArgonPasswordTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.template.ArgonPasswordTest" />
+      <module name="template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,6 +219,19 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ArgonPasswordTest" />
+        <item itemvalue="Application.ArgonInitialize" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-azul-20.0.2-3183f394aec4-7a0a4d15" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -178,10 +242,15 @@
       <option name="presentableId" value="Default" />
       <updated>1702707579968</updated>
       <workItem from="1702707580991" duration="1000" />
+      <workItem from="1702731433325" duration="1115000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

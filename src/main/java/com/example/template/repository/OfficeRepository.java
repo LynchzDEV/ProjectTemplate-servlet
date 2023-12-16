@@ -9,7 +9,7 @@ import java.util.List;
 public class OfficeRepository {
     private EntityManager entityManager;
 
-    private EntityManager getEntityManager() {
+    public EntityManager getEntityManager() {
         if (entityManager == null || !entityManager.isOpen()) {
             entityManager = EntityManagerBuilder.getEntityManager();
         }

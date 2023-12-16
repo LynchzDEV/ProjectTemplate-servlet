@@ -21,3 +21,15 @@ i
 9src/main/java/com/example/template/model/ProductLine.java,f/c/fc38bccd7f42ba406a2805981bf2614a773e7b27
 d
 4src/main/java/com/example/template/HelloServlet.java,3/f/3fcab83b4dc43b7173daf744d8c4f603f3fab4f9
+s
+Csrc/main/java/com/example/template/repository/OfficeRepository.java,d/1/d1b1656e18b0fdbca117b966c542796681374638
+u
+Esrc/main/java/com/example/template/repository/CustomerRepository.java,4/5/452472597fe637c4575a8958a7afcba0a4feb9da
+u
+Esrc/main/java/com/example/template/repository/EmployeeRepository.java,a/9/a93ef7d4f1bd2fc33ae942fe803620f2d9e77e6a
+t
+Dsrc/main/java/com/example/template/repository/ProductRepository.java,a/1/a1c28aceb091db5d160956e54caa244ff5d2acbd
+i
+9src/main/java/com/example/template/model/Environment.java,3/8/3857eb1c75c17027ef0a7900fe9a0f464f3fa852
+w
+Gsrc/main/java/com/example/template/repository/EntityManagerBuilder.java,9/4/948de197dc47dd0739956c6f46ef1368f2dfd7c8

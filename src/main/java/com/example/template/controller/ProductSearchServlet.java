@@ -9,7 +9,7 @@ import jakarta.servlet.annotation.*;
 import java.io.*;
 import java.util.List;
 
-@WebServlet(name = "ProductSearchServlet", value = "/ProductSearchServlet")
+@WebServlet(name = "ProductSearchServlet", value = "/008/ProductSearchServlet")
 public class ProductSearchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

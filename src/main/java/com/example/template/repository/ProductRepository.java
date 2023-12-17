@@ -2,6 +2,7 @@ package com.example.template.repository;
 
 import com.example.template.model.Product;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
 
 import java.util.List;
 
@@ -17,6 +18,13 @@ public class ProductRepository {
 
     public List<Product> findAll() {
         return getEntityManager().createNamedQuery("PRODUCT.FIND_ALL", Product.class).getResultList();
+    }
+
+    public List<Product> findByDes(String des) {
+        des = '%' + des.toLowerCase() + '%';
+        Query query = getEntityManager().createNamedQuery("PRODUCT.FIND_BY_DES");
+        query.setParameter("desParam", des);
+        return query.getResultList();
     }
 
     public Product find(String productCode) {

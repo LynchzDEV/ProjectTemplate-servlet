@@ -10,6 +10,10 @@ import java.math.BigDecimal;
 @Table(name = "products")
 @Getter
 @Setter
+@NamedQueries({
+        @NamedQuery(name = "PRODUCT.FIND_ALL", query = "SELECT p FROM Product p"),
+        @NamedQuery(name = "PRODUCT.FIND_BY_DES", query = "SELECT p FROM Product  p WHERE p.productDescription LIKE :desParam")
+})
 public class Product {
     @Id
     private String productCode;

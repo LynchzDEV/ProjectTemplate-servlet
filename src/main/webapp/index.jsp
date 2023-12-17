@@ -8,6 +8,6 @@
         <h1><%= "Hello World!" %>
         </h1>
         <br/>
-        <a href="OfficeListServlet">click to love FAME</a>
+        <a href="ProductListServlet">PHUWAMATE ONLYFANS</a>
     </body>
 </html>

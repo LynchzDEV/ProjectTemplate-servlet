@@ -5,18 +5,25 @@
     <head>
         <title>EMPLOYEES</title>
     </head>
+    <style>
+        body {
+            background-color: #313131;
+            color: aliceblue;
+        }
+    </style>
     <body>
         <h1>Employee Management</h1>
-        <form action="">
+        <form action="EmployeeSearchServlet" method="post">
             <label for="searchField">Enter name: </label>
             <input type="text" name="searchField" id="searchField" placeholder="Type here...">
-            ${message}
+            <input type="submit" value="SUBMIT">
+            <p style="color: #ff4e4e"> ${message}</p>
             <hr/>
             <ul>
                 <c:forEach items="${employees}" var="employees" varStatus="loop">
                     <li>
-                        ID: ${employees.employeeNumber},
-                        Name: ${employees.firstname} ${employees.lastname}
+                        ID: ${employees.id}, <br/>
+                        Name: ${employees.firstName} ${employees.lastName}
                     </li>
                     <br/>
                 </c:forEach>

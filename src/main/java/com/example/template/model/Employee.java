@@ -12,6 +12,9 @@ import lombok.ToString;
 @ToString
 @NamedQueries({
         @NamedQuery(name = "EMPLOYEE.FIND_ALL", query = "SELECT e FROM Employee e"),
+        @NamedQuery(name = "EMPLOYEE.FIND_BY_NAME", query = "SELECT e FROM Employee e WHERE e.firstName LIKE :nameParam OR e.lastName LIKE :nameParam"),
+        @NamedQuery(name = "EMPLOYEE.USERNAME_CHECKER", query = "SELECT COUNT(e) FROM Employee e WHERE e.firstName = :nameParam"),
+        @NamedQuery(name = "EMPLOYEE.ID_CHECKER", query = "SELECT COUNT(e) FROM Employee e WHERE e.id = :idParam"),
 })
 public class Employee {
     @Id

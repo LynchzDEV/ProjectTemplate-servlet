@@ -16,7 +16,7 @@ public class EmployeeListServlet extends HttpServlet {
         EmployeeRepository employeeRepository = new EmployeeRepository();
         List<Employee> employeeList = employeeRepository.findAll();
         req.setAttribute("employees", employeeList);
-        req.getRequestDispatcher("/EmployeesView.jsp").forward(req, resp);
+        req.getRequestDispatcher("/008/EmployeesView.jsp").forward(req, resp);
     }
 
     @Override

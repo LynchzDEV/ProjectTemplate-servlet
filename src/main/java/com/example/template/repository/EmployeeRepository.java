@@ -2,6 +2,7 @@ package com.example.template.repository;
 
 import com.example.template.model.Employee;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
 
 import java.util.List;
 
@@ -17,6 +18,27 @@ public class EmployeeRepository {
 
     public List<Employee> findAll() {
         return getEntityManager().createNamedQuery("EMPLOYEE.FIND_ALL", Employee.class).getResultList();
+    }
+
+    public List<Employee> findByName(String name) {
+        name = '%' + name.toLowerCase() + '%';
+        Query query = getEntityManager().createNamedQuery("EMPLOYEE.FIND_BY_NAME", Employee.class);
+        query.setParameter("nameParam", name);
+        return query.getResultList();
+    }
+
+    public boolean usernameChecker(String username) {
+        Query query = getEntityManager().createNamedQuery("EMPLOYEE.USERNAME_CHECKER", Long.class);
+        query.setParameter("nameParam", username);
+        long count = (long) query.getSingleResult();
+        return count > 0;
+    }
+
+    public boolean idChecker(String password) {
+        Query query = getEntityManager().createNamedQuery("EMPLOYEE.ID_CHECKER", Long.class);
+        query.setParameter("idParam", password);
+        long count = (long) query.getSingleResult();
+        return count > 0;
     }
 
     public Employee find(Integer employeeNumber) {

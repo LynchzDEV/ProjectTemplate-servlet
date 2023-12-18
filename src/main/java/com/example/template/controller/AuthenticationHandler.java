@@ -19,7 +19,7 @@ public class AuthenticationHandler extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         EmployeeRepository employeeRepository = new EmployeeRepository();
-        if (employeeRepository.usernameChecker(username) && employeeRepository.idChecker(password)) {
+        if (employeeRepository.combinedChecker(password, username)) {
             HttpSession session = req.getSession(true);
             session.setAttribute("username", username);
             req.setAttribute("message", "Login Success, enjoy");

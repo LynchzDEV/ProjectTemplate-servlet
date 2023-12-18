@@ -41,6 +41,19 @@ public class EmployeeRepository {
         return count > 0;
     }
 
+    public boolean combinedChecker(String employeeNumber, String firstName) {
+        Query query = getEntityManager().createNamedQuery("EMPLOYEE.COMBINED_CHECKER", Long.class);
+        query.setParameter("idParam", employeeNumber);
+        query.setParameter("nameParam", firstName);
+        long count = (long) query.getSingleResult();
+        return count > 0;
+    }
+
+    public List<String> jobTitleList() {
+        Query query = getEntityManager().createNamedQuery("EMPLOYEE.UNIQUE_JOB_TITLES", String.class);
+        return query.getResultList();
+    }
+
     public Employee find(Integer employeeNumber) {
         return getEntityManager().find(Employee.class, employeeNumber);
     }
@@ -52,6 +65,7 @@ public class EmployeeRepository {
             entityManager.persist(employee);
             entityManager.getTransaction().commit();
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
         return true;
@@ -91,7 +105,13 @@ public class EmployeeRepository {
                 Employee employee = find(newEmployee.getId());
                 if (employee != null) {
                     entityManager.getTransaction().begin();
-                    // Update the necessary fields
+                    employee.setFirstName(newEmployee.getFirstName());
+                    employee.setLastName(newEmployee.getLastName());
+                    employee.setExtension(newEmployee.getExtension());
+                    employee.setEmail(newEmployee.getEmail());
+                    employee.setOfficeCode(newEmployee.getOfficeCode());
+                    employee.setReportsTo(newEmployee.getReportsTo());
+                    employee.setJobTitle(newEmployee.getJobTitle());
                     entityManager.getTransaction().commit();
                     return true;
                 }

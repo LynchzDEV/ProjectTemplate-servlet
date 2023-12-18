@@ -1,7 +1,9 @@
 package com.example.template.repository;
 
+import com.example.template.model.Employee;
 import com.example.template.model.Office;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.NoResultException;
 import jakarta.persistence.Query;
 
 import java.util.List;
@@ -18,6 +20,16 @@ public class OfficeRepository {
 
     public List<Office> findAll() {
         return getEntityManager().createNamedQuery("OFFICE.FIND_ALL").getResultList();
+    }
+
+    public Office findById(String id) {
+        try {
+            Query query = getEntityManager().createNamedQuery("OFFICE.FIND_BY_ID", Office.class);
+            query.setParameter("idParam", id);
+            return (Office) query.getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
     }
 
     public Office find(String officeCode) {

@@ -6,7 +6,8 @@ import jakarta.servlet.annotation.*;
 
 import java.io.*;
 
-@WebFilter(filterName = "LoginFilter", servletNames = {"EmployeeListServlet"}) //replace *(all) with servlet path
+//@WebFilter(filterName = "LoginFilter", servletNames = {"EmployeeListServlet"}) //replace *(all) with servlet path
+@WebFilter(filterName = "LoginFilter", servletNames = {"NOTHING"}) //replace *(all) with servlet path
 public class LoginFilter implements Filter {
     private FilterConfig config;
 

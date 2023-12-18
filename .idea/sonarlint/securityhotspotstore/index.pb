@@ -33,3 +33,11 @@ i
 9src/main/java/com/example/template/model/Environment.java,3/8/3857eb1c75c17027ef0a7900fe9a0f464f3fa852
 w
 Gsrc/main/java/com/example/template/repository/EntityManagerBuilder.java,9/4/948de197dc47dd0739956c6f46ef1368f2dfd7c8
+I
+src/main/webapp/index.jsp,8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded
+Q
+!src/main/webapp/EmployeesList.jsp,b/c/bc23f3134c0d38ce6295f4a4daff7b3807d01ce2
+v
+Fsrc/main/java/com/example/template/controller/EmployeeListServlet.java,4/a/4aad1c06f924c2cbbc50022c5da0312d73401fba
+Q
+!src/main/webapp/EmployeesView.jsp,8/b/8b3500d6b90edd0e4476a34fbc85df49b8d150d3
